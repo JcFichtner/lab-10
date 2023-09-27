@@ -1,0 +1,35 @@
+Escreva um programa que crie um vetor vetA de 5 elementos inteiros,
+inicializando-os para os valores 10, 20, 30, 40 e 50. Crie um segundo vetor vetB
+inicializando apenas os dois primeiros elementos para 10 e 20 e todos os demais
+elementos para zero. Crie um terceiro vetor vetC inicializando apenas o terceiro
+elemento para o valor 30 e os demais para zero. Exiba os valores contidos em cada
+vetor para conferir os valores armazenados:
+
+Vetor A: 10 20 30 40 50
+Vetor B: 10 20 0 0 0
+Vetor C: 0 0 30 0 0
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	  int vetA[] = { 10,20,30,40,50 };
+    
+    int vetB[5] = { 10,20 };
+
+    int vetC[5];
+    vetC[0] = 0;
+    vetC[1] = 0;
+    vetC[2] = 30;
+    vetC[3] = 0;
+    vetC[4] = 0;
+
+
+    cout << vetA[0] << ',' << vetA[1] << ',' << vetA[2] << ',' << vetA[3] << ',' << vetA[4] << endl;
+
+    cout << vetB[0] << ',' << vetB[1] << ',' << vetB[2] << ',' << vetB[3] << ',' << vetB[4] << endl;
+
+    cout << vetC[0] << ',' << vetC[1] << ',' << vetC[2] << ',' << vetC[3] << ',' << vetC[4] << endl;
+
+}
