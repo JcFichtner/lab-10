@@ -1,0 +1,37 @@
+Construa uma função que receba um vetor de cinco elementos inteiros e retorne a
+soma dos elementos do vetor. Construa um programa para testar a função, como
+mostrado abaixo:
+
+Digite 5 valores: 2 3 5 4 6
+A soma do vetor é 20.
+
+#include <iostream>
+using namespace std;
+
+int soma(int x[])
+{
+    cout << " Digite 5 Valores: ";
+    int x1, x2, x3, x4, x5;
+
+    cin >> x1;
+    cin >> x2;
+    cin >> x3;
+    cin >> x4;
+    cin >> x5;
+
+    x[0] = x1;
+    x[1] = x2;
+    x[2] = x3;
+    x[3] = x4;
+    x[4] = x5;
+
+    return x[0] + x[1] + x[2] + x[3] + x[4];
+    
+}
+
+int main()
+{
+    int vet[5];
+
+    cout << "A Soma Do Vetor = " << soma(vet);
+}
