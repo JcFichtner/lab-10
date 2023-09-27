@@ -1,0 +1,65 @@
+Escreva um programa que crie dois vetores de três elementos cada. O primeiro
+vetor deve armazenar os preços dos produtos: Alface R$1.50/Kg, Beterraba
+R$2.00/Kg, Cenoura R$1.00/Kg. O segundo vetor deve armazenar a quantidade
+desejada de cada produto. Essa quantidade será informada pelo usuário. Calcule o
+total a pagar por produto e o total final da compra.
+
+Prezado Cliente,
+Digite a quantidade de quilos desejados:
+Alface: 2
+Beterraba: 3
+Cenoura: 1.5
+Resumo da Compra
+----------------------
+Alface = R$3.00
+Beterraba = R$6.00
+Cenoura = R$1.50
+----------------------
+Total = R$10.50
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float veg[3] = { 1.50,2.0,1.0 };
+    float quant[3];
+
+	float alface;
+	float beterraba;
+	float cenoura;
+
+	cout << "Prezado Cliente;" << endl;
+	cout << "Digite a Quantidade de quilos Desejada:" << endl;
+
+	cout << "Alface: ";
+	cin >> alface;
+
+	cout << " Beterraba: ";
+	cin >> beterraba;
+
+	cout << " Cenoura: ";
+	cin >> cenoura;
+
+	quant[0] = alface;
+	quant[1] = beterraba;
+	quant[2] = cenoura;
+
+	cout << "Resumo Da Compra\n";
+	cout << "------------------" << endl;
+
+	cout << "R$ Alface: " << veg[0] * quant[0] << endl;
+	cout << "R$ Beterraba: " << veg[1] * quant[1] << endl;
+	cout << "R$ Cecoura " << veg[2] * quant[2] << endl;
+
+	cout << "------------------" << endl;
+
+	float total1 = veg[0] * quant[0];
+	float total2 = veg[1] * quant[1];
+	float total3 = veg[2] * quant[2];
+
+	float total = total1 + total2 + total3;
+
+	cout << "Total: " << total;
+
+}
